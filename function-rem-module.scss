@@ -1,5 +1,5 @@
 @function px-to-rem($px) {
-    @if type-of($px) == "number" and unitless($px) {
+    @if unitless($px) {
         @return calc($px / 16) + rem;
     } @else {
         $px-no-unit: calc($px / 1px);
