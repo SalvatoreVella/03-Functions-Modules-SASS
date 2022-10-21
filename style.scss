@@ -19,7 +19,7 @@ div {
     }
     section {
         display: flex;
-        margin: 0 f.px-to-rem(16);
+        margin: 0 f.px-to-rem(16px);
         article {
             @include card(csm.$c-primary, csm.$c-tertiary);
             p {
@@ -31,8 +31,9 @@ div {
             }
         }
         &:last-child article {
-            @include card(csm.$c-tertiary, csm.$c-secondary, f.px-to-rem(24));
-            margin-bottom: f.px-to-rem(16);
+            @include card(csm.$c-tertiary, csm.$c-secondary, f.px-to-rem(24px));
+            margin-bottom: f.px-to-rem(16px);
         }
     }
+   
 }
